@@ -6,7 +6,7 @@
 }
 
 #container {
-    background-color: rgb(128, 128, 128);
+    background-color: white;
     width: 100%;
     height: 100%;
 }
@@ -35,7 +35,7 @@
 #img-perfil {
     position: absolute;
     top: 15%;
-    left: 35%;
+    left: 34%;
     width: 30%;
     height: auto;
     border-radius: 100%;
@@ -61,16 +61,64 @@
     display: grid;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
 }
 
 #titulo-blog {
     font-size: 300%;
+    box-shadow: 2px 2px 20px white;
+    filter: drop-shadow(2px 2px 20px gray);
 }
 
 #container-article3 {
     width: 100%;
-    height: 40vh;
-    background-color:  rgb(128, 128, 128);
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
     column-gap: 150px;
+}
+
+#introduccion{
+    box-shadow: 2px 2px 20px white;
+    filter: drop-shadow(2px 2px 20px cyan);
+}
+#introduccion2{
+    box-shadow: 2px 2px 20px white;
+    filter: drop-shadow(2px 2px 20px cyan);
+}
+#bienvenido{
+    box-shadow: 2px 2px 20px white;
+    filter: drop-shadow(2px 2px 20px cyan);
+}
+#container-hobbies{
+    display: flex;
+    width: 1475px;
+    height: 430px;  
+}
+.hobbies{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.hobbies:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#titulo-hobbies {
+    font-size: 200%;
+    text-align: center;
+}
+
+.redes{
+    cursor: pointer;
+}
+summary{
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
 }

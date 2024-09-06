@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -21,57 +20,64 @@
     align-items: center;
     flex-wrap: wrap;
 }
-#name, #blog {
-    transition: color 0.5s ease-in-out; 
-}
 
-#name:hover, #blog:hover {
-    animation: cambioColores 2s infinite;
-}
-
-#quien-soy{
-    cursor: pointer;
-    transition: color 0.5s ease-in-out; 
-}
-
-#quien-soy:hover {
-    animation: cambioColores 2s infinite; 
+#name,
+#blog {
+    transition: color 0.5s ease-in-out;
 }
 
 summary {
     font-weight: bold;
     font-size: 150%;
     cursor: pointer;
-    transition: color 0.5s ease-in-out; 
+    transition: color 0.5s ease-in-out;
 }
 
+#quien-soy {
+    cursor: pointer;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+#quien{
+    text-decoration: none;
+}
+
+#name:hover,
+#blog:hover,
+#quien-soy:hover,
 summary:hover {
-    animation: cambioColores 2s infinite; 
+    animation: cambioColores 2s infinite;
 }
 
 @keyframes cambioColores {
     0% {
-        color: blue; 
+        color: blue;
     }
+
     25% {
         color: red;
     }
+
     50% {
-        color: green; 
+        color: green;
     }
+
     75% {
-        color: white; 
+        color: white;
     }
+
     100% {
-        color: yellow; 
+        color: yellow;
     }
 }
 
-.redes{
+.redes {
     cursor: pointer;
 }
+
 .redes:hover {
-     transform: translate(0,-10%);
+    transform: translate(0, -10%);
 }
 
 #container-article {
@@ -160,7 +166,8 @@ summary:hover {
     filter: contrast(120%);
 }
 
-#titulo-hobbies, #titulo-fav {
+#titulo-hobbies,
+#titulo-fav {
     font-size: 300%;
     text-align: center;
     margin: 20px;
@@ -168,7 +175,7 @@ summary:hover {
     filter: drop-shadow(2px 2px 20px gray);
 }
 
-#container-article4{
+#container-article4 {
     margin: 20px 0 0 200px;
     width: 70%;
     height: 450px;
@@ -177,7 +184,7 @@ summary:hover {
     gap: 10px;
 }
 
-#container-article4 img{
+#container-article4 img {
     width: 10%;
     height: 100%;
     object-fit: cover;
@@ -187,23 +194,25 @@ summary:hover {
     border: solid 2px;
 }
 
-#container-article4 img:hover{
-width: 25%;
+#container-article4 img:hover {
+    width: 25%;
 }
 
-#titulo-series, #titulo-peliculas, #titulo-comidas{
+#titulo-series,
+#titulo-peliculas,
+#titulo-comidas {
     margin: 50px;
     font-size: 50px;
     text-align: center;
 }
 
-#text-fav{
+#text-fav {
     text-align: center;
-     box-shadow: 2px 2px 20px white;
+    box-shadow: 2px 2px 20px white;
     filter: drop-shadow(2px 2px 20px cyan);
 }
 
-#container-article5{
+#container-article5 {
     margin: 20px 0 0 200px;
     width: 70%;
     height: 200px;
@@ -212,7 +221,7 @@ width: 25%;
     gap: 10px;
 }
 
-#container-article5 img{
+#container-article5 img {
     width: 10%;
     height: 100%;
     object-fit: cover;
@@ -222,11 +231,11 @@ width: 25%;
     border: solid 2px;
 }
 
-#container-article5 img:hover{
-width: 15%;
+#container-article5 img:hover {
+    width: 15%;
 }
 
-#container-article6{
+#container-article6 {
     margin: 20px 0 0 200px;
     width: 70%;
     height: 450px;
@@ -235,7 +244,7 @@ width: 15%;
     gap: 10px;
 }
 
-#container-article6 img{
+#container-article6 img {
     width: 15%;
     height: 50%;
     object-fit: cover;
@@ -245,10 +254,9 @@ width: 15%;
     border: solid 2px;
 }
 
-#container-article6 img:hover{
-width: 25%;
+#container-article6 img:hover {
+    width: 25%;
 }
-
 
 .site-footer {
     background-color: #f5f5f5;
@@ -308,34 +316,34 @@ hr {
     }
 
     #img-paisaje {
-        height: 50vh; 
+        height: 50vh;
     }
 
     #img-perfil {
         top: 15%;
         left: 50%;
         transform: translateX(-50%);
-        width: 40%; 
+        width: 40%;
     }
 
     #titulo-blog {
-        font-size: 250%; 
+        font-size: 250%;
         margin: 70px;
     }
 
     #container-article3 {
         flex-direction: row;
-        column-gap: 50px; 
+        column-gap: 50px;
         row-gap: 10px;
         margin-bottom: 100px;
     }
 
     #container-hobbies {
-        flex-direction: row; 
+        flex-direction: row;
         width: 100%;
         height: auto;
     }
-    
+
     .hobbies {
         width: 0px;
         flex-grow: 1;
@@ -344,40 +352,50 @@ hr {
         transition: .5s ease;
         border: solid 2px;
     }
-    
+
     #titulo-hobbies {
         font-size: 180%;
     }
-    
-    #introduccion, #bienvenido, #introduccion2 {
-        font-size: 120%; 
+
+    #introduccion,
+    #bienvenido,
+    #introduccion2 {
+        font-size: 120%;
     }
 
-    #container-article4, #container-article5, #container-article6 {
+    #container-article4,
+    #container-article5,
+    #container-article6 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        place-items: center;  
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
         width: 100%;
         height: auto;
-        gap: 20px;  
+        gap: 20px;
         margin: 20px 0;
     }
 
-    #container-article4 img, #container-article5 img, #container-article6 img {
-        width: 50%;  
+    #container-article4 img,
+    #container-article5 img,
+    #container-article6 img {
+        width: 50%;
         height: auto;
-        transition: width 0.5s ease-in-out; 
+        transition: width 0.5s ease-in-out;
     }
 
-    #titulo-series, #titulo-peliculas, #titulo-comidas {
-        font-size: 30px; 
+    #titulo-series,
+    #titulo-peliculas,
+    #titulo-comidas {
+        font-size: 30px;
         text-align: center;
         margin: 30px;
-        grid-column: span 2; 
+        grid-column: span 2;
     }
 
-    #container-article4 img:hover, #container-article5 img:hover, #container-article6 img:hover {
-        width: 70%; 
+    #container-article4 img:hover,
+    #container-article5 img:hover,
+    #container-article6 img:hover {
+        width: 70%;
     }
 
     .footer-legal {
@@ -457,26 +475,32 @@ hr {
         flex-grow: 0;
         border: solid 5px;
     }
-   
+
     #titulo-hobbies {
         font-size: 50px;
     }
 
-    #container-article4, #container-article5, #container-article6 {
-        flex-direction: column; 
+    #container-article4,
+    #container-article5,
+    #container-article6 {
+        flex-direction: column;
         width: 100%;
         height: auto;
         margin: 20px 0;
         align-items: center;
     }
 
-    #container-article4 img, #container-article5 img, #container-article6 img {
-        width: 60%; 
+    #container-article4 img,
+    #container-article5 img,
+    #container-article6 img {
+        width: 60%;
         height: auto;
     }
 
-    #titulo-series, #titulo-peliculas, #titulo-comidas {
-        font-size: 50px; 
+    #titulo-series,
+    #titulo-peliculas,
+    #titulo-comidas {
+        font-size: 50px;
         margin: 30px;
     }
 
@@ -484,36 +508,76 @@ hr {
         font-size: 100%;
     }
 
-    #container-article4 img:hover, #container-article5 img:hover,#container-article6 img:hover{
+    #container-article4 img:hover,
+    #container-article5 img:hover,
+    #container-article6 img:hover {
         width: 70%;
-        }
+    }
 
-        .footer-legal {
-            flex-direction: column;
-            text-align: center;
-        }
-    
-        .footer-legal ul {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .footer-legal ul li {
-            margin-right: 0;
-            margin-bottom: 10px;
-        }
-    
-        .footer-legal ul li:last-child {
-            margin-bottom: 0;
-        }
-    
-        .site-footer {
-            padding: 10px;
-        }
-    
-        hr {
-            margin-bottom: 20px;
-        }
+    .footer-legal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-legal ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-legal ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .site-footer {
+        padding: 10px;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
 }
 
+/*------------------------- INDEX2-¿QUIEN SOY? ------------------------ */
+
+.container2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.titulo {
+    text-align: center;
+}
+.text-info {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.scroll-container {
+    width: 100%; 
+    height: 150px; 
+    overflow: auto; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+}
 

@@ -67,6 +67,13 @@ summary:hover {
     }
 }
 
+.redes{
+    cursor: pointer;
+}
+.redes:hover {
+     transform: translate(0,-10%);
+}
+
 #container-article {
     position: relative;
     width: 100%;
@@ -143,6 +150,7 @@ summary:hover {
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
+    border: solid 2px;
 }
 
 .hobbies:hover {
@@ -152,9 +160,93 @@ summary:hover {
     filter: contrast(120%);
 }
 
-#titulo-hobbies {
-    font-size: 200%;
+#titulo-hobbies, #titulo-fav {
+    font-size: 300%;
     text-align: center;
+    margin: 20px;
+    box-shadow: 2px 2px 20px white;
+    filter: drop-shadow(2px 2px 20px gray);
+}
+
+#container-article4{
+    margin: 20px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#container-article4 img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+    border: solid 2px;
+}
+
+#container-article4 img:hover{
+width: 25%;
+}
+
+#titulo-series, #titulo-peliculas, #titulo-comidas{
+    margin: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#text-fav{
+    text-align: center;
+     box-shadow: 2px 2px 20px white;
+    filter: drop-shadow(2px 2px 20px cyan);
+}
+
+#container-article5{
+    margin: 20px 0 0 200px;
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#container-article5 img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+    border: solid 2px;
+}
+
+#container-article5 img:hover{
+width: 15%;
+}
+
+#container-article6{
+    margin: 20px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#container-article6 img{
+    width: 15%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+    border: solid 2px;
+}
+
+#container-article6 img:hover{
+width: 25%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

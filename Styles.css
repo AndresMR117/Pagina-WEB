@@ -9,12 +9,13 @@
     background-color: white;
     width: 100%;
     height: 100%;
+    background-image: url("IMG/fondo2.jpg");
 }
 
 #container-cabecera {
     width: 100%;
     height: 12vh;
-    background-color: rgb(128, 128, 128);
+    background-color: #7bb9bb;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -39,14 +40,15 @@ summary {
     transition: color 0.5s ease-in-out;
 }
 
-#quien{
+#quien {
     text-decoration: none;
 }
 
 #name:hover,
 #blog:hover,
 #quien-soy:hover,
-summary:hover {
+summary:hover,
+.titulo-bio:hover {
     animation: cambioColores 2s infinite;
 }
 
@@ -120,19 +122,17 @@ summary:hover {
     display: grid;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
 }
 
 #titulo-blog {
     font-size: 300%;
     box-shadow: 2px 2px 20px white;
-    filter: drop-shadow(2px 2px 20px gray);
+    filter: drop-shadow(2px 2px 20px white);
 }
 
 #container-article3 {
     width: 100%;
     height: 10vh;
-    background-color: rgb(255, 255, 255);
     display: flex;
     column-gap: 150px;
 }
@@ -141,7 +141,7 @@ summary:hover {
 #introduccion2,
 #bienvenido {
     box-shadow: 2px 2px 20px white;
-    filter: drop-shadow(2px 2px 20px cyan);
+    filter: drop-shadow(2px 2px 20px white);
 }
 
 #container-hobbies {
@@ -164,6 +164,15 @@ summary:hover {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+    box-shadow: 2px 2px 20px cyan;
+    filter: drop-shadow(2px 2px 20px cyan);
+}
+
+#art1,
+#art2 {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #titulo-hobbies,
@@ -172,7 +181,7 @@ summary:hover {
     text-align: center;
     margin: 20px;
     box-shadow: 2px 2px 20px white;
-    filter: drop-shadow(2px 2px 20px gray);
+    filter: drop-shadow(2px 2px 20px white);
 }
 
 #container-article4 {
@@ -196,6 +205,8 @@ summary:hover {
 
 #container-article4 img:hover {
     width: 25%;
+    box-shadow: 2px 2px 20px cyan;
+    filter: drop-shadow(2px 2px 20px cyan);
 }
 
 #titulo-series,
@@ -209,7 +220,7 @@ summary:hover {
 #text-fav {
     text-align: center;
     box-shadow: 2px 2px 20px white;
-    filter: drop-shadow(2px 2px 20px cyan);
+    filter: drop-shadow(2px 2px 20px white);
 }
 
 #container-article5 {
@@ -233,12 +244,14 @@ summary:hover {
 
 #container-article5 img:hover {
     width: 15%;
+    box-shadow: 2px 2px 20px cyan;
+    filter: drop-shadow(2px 2px 20px cyan);
 }
 
 #container-article6 {
     margin: 20px 0 0 200px;
     width: 70%;
-    height: 450px;
+    height: 400px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -256,6 +269,8 @@ summary:hover {
 
 #container-article6 img:hover {
     width: 25%;
+    box-shadow: 2px 2px 20px cyan;
+    filter: drop-shadow(2px 2px 20px cyan);
 }
 
 .site-footer {
@@ -332,11 +347,25 @@ hr {
     }
 
     #container-article3 {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
         column-gap: 50px;
-        row-gap: 10px;
         margin-bottom: 100px;
+        padding: 20px;
     }
+
+    #introduccion,
+    #bienvenido,
+    #introduccion2 {
+        box-shadow: 2px 2px 20px white;
+        filter: drop-shadow(2px 2px 20px white);
+        padding: 10px;
+        flex: 1;
+        text-align: center;
+    }
+
 
     #container-hobbies {
         flex-direction: row;
@@ -357,10 +386,10 @@ hr {
         font-size: 180%;
     }
 
-    #introduccion,
-    #bienvenido,
-    #introduccion2 {
-        font-size: 120%;
+    #text-fav {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     #container-article4,
@@ -385,7 +414,8 @@ hr {
 
     #titulo-series,
     #titulo-peliculas,
-    #titulo-comidas {
+    #titulo-comidas,
+    #titulo-fav {
         font-size: 30px;
         text-align: center;
         margin: 30px;
@@ -550,13 +580,16 @@ hr {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url("IMG/fondo.jpeg");
 }
+
 .container-header {
-    background-color: #4CAF50;
+    background-color: rgb(172, 175, 176);
     color: white;
     padding: 20px;
     text-align: center;
 }
+
 .container-section {
     max-width: 800px;
     margin: 20px auto;
@@ -564,20 +597,21 @@ hr {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .titulo {
     text-align: center;
 }
+
 .text-info {
     text-align: justify;
     line-height: 1.6;
 }
 
 .scroll-container {
-    width: 100%; 
-    height: 150px; 
-    overflow: auto; 
-    border: 1px solid #ccc; 
-    padding: 10px; 
-    background-color: #f9f9f9; 
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
-
